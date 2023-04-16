@@ -22,7 +22,7 @@ func main() {
 	if err != nil {
 		log.Fatal("catの実行に失敗しました")
 	}
-
+//aa
 	// mmap()システムコールの呼び出しによって1GBのメモリ領域を獲得
 	data, err := syscall.Mmap(-1, 0, ALLOC_SIZE, syscall.PROT_READ|syscall.PROT_WRITE, syscall.MAP_ANON|syscall.MAP_PRIVATE)
 	if err != nil {
